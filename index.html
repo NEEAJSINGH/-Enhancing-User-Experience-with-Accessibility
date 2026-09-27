@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible technology and web development information portal.">
+  <title>AccessTech - Accessible Information Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip link lets keyboard and screen-reader users bypass repeated navigation. -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="AccessTech home">AccessTech</a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Inclusive Web Development</p>
+          <h1 id="hero-title">Technology information designed for everyone.</h1>
+          <p class="hero-text">
+            Explore practical articles about web development, accessibility,
+            user experience, and modern digital products.
+          </p>
+          <a class="button primary-button" href="#articles">Explore articles</a>
+        </div>
+
+        <aside class="hero-card" aria-labelledby="quick-title">
+          <h2 id="quick-title">Accessibility first</h2>
+          <p>
+            Clear structure, readable content, keyboard support, and visible
+            focus states are built into this example.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="articles" class="content-section" aria-labelledby="articles-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Latest content</p>
+          <h2 id="articles-title">Featured Articles</h2>
+          <p>Short guides covering practical front-end and accessibility topics.</p>
+        </div>
+
+        <div class="article-grid">
+          <article class="article-card">
+            <div class="article-icon" aria-hidden="true">A11Y</div>
+            <div class="article-content">
+              <p class="article-meta">Accessibility · 6 min read</p>
+              <h3><a href="#accessibility">Building keyboard-friendly websites</a></h3>
+              <p>
+                Learn how focus order, native controls, and visible focus
+                indicators make websites easier to navigate.
+              </p>
+              <a class="read-more" href="#accessibility" aria-label="Read Building keyboard-friendly websites">
+                Read article <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-icon" aria-hidden="true">UX</div>
+            <div class="article-content">
+              <p class="article-meta">UX · 5 min read</p>
+              <h3><a href="#accessibility">Designing clear user interfaces</a></h3>
+              <p>
+                Discover how hierarchy, spacing, labels, and predictable
+                interactions improve the experience for different users.
+              </p>
+              <a class="read-more" href="#accessibility" aria-label="Read Designing clear user interfaces">
+                Read article <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-icon" aria-hidden="true">SEM</div>
+            <div class="article-content">
+              <p class="article-meta">HTML · 7 min read</p>
+              <h3><a href="#accessibility">Why semantic HTML matters</a></h3>
+              <p>
+                Understand how headings, landmarks, buttons, links, and
+                meaningful page structure help assistive technologies.
+              </p>
+              <a class="read-more" href="#accessibility" aria-label="Read Why semantic HTML matters">
+                Read article <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="accessibility" class="content-section alt-section" aria-labelledby="accessibility-title">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Accessibility improvements</p>
+          <h2 id="accessibility-title">Designed with inclusive interaction in mind</h2>
+          <p>
+            This page demonstrates accessibility improvements that can be
+            applied to a typical information portal.
+          </p>
+        </div>
+
+        <div class="check-list" role="list" aria-label="Accessibility features">
+          <div role="listitem"><span aria-hidden="true">✓</span> Semantic landmarks and headings</div>
+          <div role="listitem"><span aria-hidden="true">✓</span> Keyboard-accessible navigation</div>
+          <div role="listitem"><span aria-hidden="true">✓</span> Visible focus indicators</div>
+          <div role="listitem"><span aria-hidden="true">✓</span> Descriptive link labels</div>
+          <div role="listitem"><span aria-hidden="true">✓</span> Responsive layout and readable spacing</div>
+          <div role="listitem"><span aria-hidden="true">✓</span> Reduced-motion consideration</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section" aria-labelledby="about-title">
+      <div class="container narrow">
+        <p class="eyebrow">About this project</p>
+        <h2 id="about-title">Week 3 Accessibility & UX Task</h2>
+        <p>
+          This demonstration reworks a typical information portal using
+          semantic HTML, ARIA attributes where appropriate, keyboard
+          interaction, responsive CSS, and documented accessibility practices.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 AccessTech. Built as an accessibility-focused front-end project.</p>
+      <a href="#main-content">Back to main content</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
